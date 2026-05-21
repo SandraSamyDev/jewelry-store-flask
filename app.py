@@ -45,7 +45,7 @@ def login():
             session["user_id"] = user.id
             session["username"] = user.username
 
-            return redirect(url_for("home"))
+            return redirect(url_for("products"))
 
         else:
             return redirect(url_for("login", msg="Incorrect password"))
